@@ -30,6 +30,12 @@ body {
 	background-color: hsl(136, 57%, 49%);
 }
 
+
+.text {
+	color: rgb(204, 187, 187);
+}
+
+
 @media (min-width: 576px) {
 	.navbar-toggler {
 		border: transparent;
