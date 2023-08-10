@@ -43,17 +43,17 @@ section {
 	position: relative;
 	height: 400px;
 	background-color: #efeded;
-	overflow: hidden;
 }
 
 .hero-img {
 	position: absolute;
-	right: -10%;
-	width: 40vw;
+	right: -15%;
+	width: 45vw;
 	height: 100%;
 	background-image: url(../img/bg-intro-desktop.svg);
 	background-size: 100%;
 	background-position: right;
+	clip-path: inset(0 24% 0 0);
 }
 
 .phones {
@@ -61,6 +61,7 @@ section {
 	right: -80px;
 	top: -80px;
 	height: 600px;
+	clip-path: inset(13.5% 16% 0 0);
 }
 
 .header-text {
