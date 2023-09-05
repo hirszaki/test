@@ -31,8 +31,69 @@ body {
 }
 
 
-.text {
+
+.header-text {
+	width: 40vw;
+	background-color: aquamarine;
+	padding-left: 60px;
+	padding-bottom: 40px;
+}
+
+.header-text h2 {
+	padding-top: 50px;
+}
+
+.header-text p {
+	padding: 20px 0px;
+}
+
+.hero-img {
+	width: 100vh;
+	background-image: url(../img/bg-intro-desktop.svg);
+	
+	
+}
+.aboutus {
+	background-color: #f0f0f0;
+}
+
+.blog {
+	background-color: #fff8f8;
+}
+
+.blog img {
+	height: 30vh;
+	width: 100%;
+	object-fit: cover;
+}
+.card {
+	border: none;
+	box-shadow: 8px 8px 24px 0px rgba(90, 66, 66, 0);
+}
+
+p {
+	font-size: 15px;
 	color: rgb(204, 187, 187);
+}
+
+.footer {
+	background-color: hsl(233, 26%, 24%);
+}
+
+.footer-icon {
+	height: 30px;
+	width: 30px;
+	color: white;
+	display: flex;
+}
+
+.fa-brands {
+	padding: 10px;
+}
+
+.footer img {
+	margin-bottom: 55px;
+	background-color: #fff8f8;
 }
 
 
