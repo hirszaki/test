@@ -9,18 +9,35 @@ body {
 	font-size: 18px;
 }
 
+.navbar {
+	margin: 0 200px;
+	height: 100px;
+}
+
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
 	color: gray;
 }
 
 .nav-link {
-	color: gray;
+	position: relative;
 	margin: 10px;
 }
 
-.nav-link:hover {
-	border-bottom: 5px solid hsl(136, 57%, 49%);
+.nav-link::after {
+	content: '';
+	opacity: 0;
+	transition: all 0.3s;
+	height: 5px;
+	width: 100%;
+	background-color: lime;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.nav-link:hover::after {
+	opacity: 1;
 }
 
 .btn {
@@ -29,6 +46,116 @@ body {
 	color: white;
 	background-color: hsl(136, 57%, 49%);
 }
+
+<<<<<<< HEAD
+
+
+.header-text {
+	width: 40vw;
+	background-color: aquamarine;
+	padding-left: 60px;
+	padding-bottom: 40px;
+}
+
+.header-text h2 {
+	padding-top: 50px;
+}
+
+.header-text p {
+	padding: 20px 0px;
+}
+
+.hero-img {
+	width: 100vh;
+	background-image: url(../img/bg-intro-desktop.svg);
+	
+	
+}
+.aboutus {
+	background-color: #f0f0f0;
+}
+
+.blog {
+	background-color: #fff8f8;
+}
+
+.blog img {
+	height: 30vh;
+	width: 100%;
+	object-fit: cover;
+}
+.card {
+	border: none;
+	box-shadow: 8px 8px 24px 0px rgba(90, 66, 66, 0);
+}
+
+p {
+	font-size: 15px;
+	color: rgb(204, 187, 187);
+}
+
+.footer {
+	background-color: hsl(233, 26%, 24%);
+}
+
+.footer-icon {
+	height: 30px;
+	width: 30px;
+	color: white;
+	display: flex;
+}
+
+.fa-brands {
+	padding: 10px;
+}
+
+.footer img {
+	margin-bottom: 55px;
+	background-color: #fff8f8;
+}
+
+=======
+section {
+	margin: 0 200px;
+}
+
+.header-img {
+	position: relative;
+	height: 400px;
+	background-color: #efeded;
+}
+
+.hero-img {
+	position: absolute;
+	right: -15%;
+	width: 45vw;
+	height: 100%;
+	background-image: url(../img/bg-intro-desktop.svg);
+	background-size: 100%;
+	background-position: right;
+	clip-path: inset(0 24% 0 0);
+}
+
+.phones {
+	position: absolute;
+	right: -80px;
+	top: -80px;
+	height: 600px;
+	clip-path: inset(13.5% 16% 0 0);
+}
+
+.header-text {
+	display: flex;
+	width: 30vw;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.header-text .btn {
+	align-self: start;
+}
+>>>>>>> 33b39c269d7ec833258219bcb15641481747d253
 
 @media (min-width: 576px) {
 	.navbar-toggler {
